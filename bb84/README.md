@@ -37,6 +37,6 @@ Now consider that there are 2 nodes, Alice and Bob, want to make there own secre
 11. Alice randomly picked n indices, sent them to Bob
 12. Bob received the indices, sent k2[i] to Alice if i is in the indices
 13. Alice recived the half of k2, compare k1[i] and k2[i], record the QBER.
-14. based on the QBER, Alice told Bob if the QKD is successful or not.
+14. based on the QBER, Alice told Bob if the QKD is successful or not.<br>
     if success, now Alice and Bob would have the same key(the bits where the indices weren't picked to compare)<br>
     if failed, redo the protocol
