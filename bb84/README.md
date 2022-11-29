@@ -11,7 +11,7 @@ Now consider that there are 2 nodes, Alice and Bob, want to make there own secre
     ```
 2. Alice performed X-gate on Qi if base[i] = 1<br>
 3. Alice perfromed Hadamard-gate on Qi if key[i] = 1<br>
-    Now, each qubit is in the 1 of the 4 states, <br>
+    Now, each qubit is in one of the four states, <br>
     ```
         |0>, |1>, |+> and |->
     ```
@@ -32,11 +32,13 @@ Now consider that there are 2 nodes, Alice and Bob, want to make there own secre
     **This means the qubits are measured by Bob in different basis than Alice prepared.**
     >
     After doing this, with high probability, there would be at least 2n bits left.<br>
-    For Alice, the 2n bits is the key, For Bob, is the measurement, the key and measurements should be the same if there're no coherences in the channel and no eavesdropping during the teleporting<br>
+    For Alice, the 2n bits is the key, For Bob, is the measurement, <br>
+    the key and measurements should be the same if there're no coherences in the channel and no eavesdropping during the teleporting<br>
+    <br>
     Let's define the key of Alice as k1, and the measurement of Bob as k2
 11. Alice randomly picked n indices, sent them to Bob
 12. Bob received the indices, sent k2[i] to Alice if i is in the indices
-13. Alice recived the half of k2, compare k1[i] and k2[i], record the QBER.
+13. Alice received the half of k2, compared k1[i] and k2[i], recorded the QBER.
 14. based on the QBER, Alice told Bob if the QKD is successful or not.<br>
     if success, now Alice and Bob would have the same key(the bits where the indices weren't picked to compare)<br>
     if failed, redo the protocol
