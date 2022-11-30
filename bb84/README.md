@@ -1,5 +1,5 @@
 ## The BB84 QKD(Quantum key distribution) Protocol
-If you wanna try this protocol yourself, you can download the file and execute the programs by typing following script in terminal.
+If you wanna try this protocol yourself, you can download the files and execute the programs by typing following script in terminal.
 ```sh
 sh run.sh
 ```
