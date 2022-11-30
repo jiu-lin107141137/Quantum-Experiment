@@ -1,4 +1,8 @@
 ## The BB84 QKD(Quantum key distribution) Protocol
+If you wanna try this protocol yourself, you can download the file and execute the programs by typing following script in terminal.
+```sh
+sh run.sh
+```
 
 ### Basic Steps :
 Now suppose that there are 2 nodes, Alice and Bob, want to make there own secret shared key.
