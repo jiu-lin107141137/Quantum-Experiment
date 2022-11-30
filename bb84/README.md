@@ -1,6 +1,6 @@
 ## The BB84 QKD(Quantum key distribution) Protocol
 
-### Steps
+### Basic Steps
 Now consider that there are 2 nodes, Alice and Bob, want to make there own secret shared key.
 
 1. Alice first prepares 3 things:<br>
@@ -46,3 +46,7 @@ Now consider that there are 2 nodes, Alice and Bob, want to make there own secre
        => if successful, now Alice and Bob have the same key(the bits where the indices weren't picked to compare)<br>
        => if fail, redo the protocol
 8. Alice and Bob perform information reconciliation and privacy amplification on the remaining n bits to obtain m shared key bits.
+
+
+### What will happen when the teleporting is under coherences
+Now let's consider this protocol to be performed in reality, there will be certain coherences in the communicating
