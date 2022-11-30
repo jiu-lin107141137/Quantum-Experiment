@@ -1,7 +1,7 @@
 ## The BB84 QKD(Quantum key distribution) Protocol
 
 ### Basic Steps :
-Now consider that there are 2 nodes, Alice and Bob, want to make there own secret shared key.
+Now suppose that there are 2 nodes, Alice and Bob, want to make there own secret shared key.
 
 1. Alice first prepares 3 things: 
     ```
