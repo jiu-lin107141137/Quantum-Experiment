@@ -31,9 +31,9 @@ Now consider that there are 2 nodes, Alice and Bob, want to make there own secre
         >
         **This means the qubits are measured by Bob in different basis than Alice prepared.**
         >
-        After doing this, with high probability, there will be at least 2n bits left.  
-        For Alice, the 2n bits is the key, For Bob, is the measurement.  
-        The key and measurements should be the same if there're no coherences in the channel and no eavesdropping during the teleporting  
+    After doing this, with high probability, there will be at least 2n bits left.  
+    For Alice, the 2n bits is the key, For Bob, is the measurement.  
+    The key and measurements should be the same if there're no coherences in the channel and no eavesdropping during the teleporting  
 6. Alice randomly selects a subset of n bits that will to serve as a check on others' eavesdropping and noise, and tells Bob which bits she selected.
     1. Alice randomly picks n indices, sends them to Bob
 7. Alice and Bob announce and compare the values of the n check bits. If more than an acceptable number disagree, they abort the protocol.
