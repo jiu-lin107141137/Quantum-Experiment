@@ -48,6 +48,7 @@ Now consider that there are 2 nodes, Alice and Bob, want to make there own secre
 8. Alice and Bob perform information reconciliation and privacy amplification on the remaining n bits to obtain m shared key bits.
 
 
-### What will happen when the communicating is under coherences
-Now let's consider this protocol to be performed **in reality**, there will be certain noise in the communicating channel and others' eavesdropping during the communicating. Noise and eavesdropping will cause the information an idle qubit holds to fade away, result in the measurement is not the one expects. <br>
-Look at the step 4, since Alice only sends qubits to Bob, the basis to measure qubits has not revealed, eavesdropper has no idea which basis to measure in, at best, she can only guess
+### What will happen when the communicating is under disruption
+Now let's consider this protocol to be performed **in reality**, there will be certain noise in the communicating channel and others' eavesdropping during the communicating. These disruptions will cause the information an idle qubit holds to fade away, result in the measurement is not the one expects. <br>
+Look at the step 4, since Alice only sends qubits to Bob, the basis to measure qubits has not been revealed, eavesdropper has no idea which basis to measure in to eavesdrop on the communication; at best, he can only guess, and if his guess was wrong, he will disturbed the state sent to Bob.
+If the state is disturbed by noise or eavesdropping, Bob will received the wrong measurement with high probability, and this will be discovered by Bob and Alice in step 7.
