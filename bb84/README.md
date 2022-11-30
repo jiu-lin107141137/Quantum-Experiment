@@ -16,8 +16,7 @@ Now consider that there are 2 nodes, Alice and Bob, want to make there own secre
         |0>, |1>, |+> and |->
     ```
     To become a specific state, the 4 states stand the same probability, **25%**.  
-    base[i] determines a qubit to be |0> or |1>,  
-    and the key[i] determines a qubit to be in the basis od X or Z  
+    base[i] determines a qubit to be |0> or |1>, while key[i] determines a qubit to be in the basis od X or Z  
     > 
     **Note: The four states are not all mutually orthogonal, and therefore no measurement can distinguish between (all of) them with certainty**
     >
