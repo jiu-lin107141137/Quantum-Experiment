@@ -1,6 +1,6 @@
-### Distributing a graph state
+## Distributing a graph state
 
 ---
 
-#### Reference
+### Reference:
 [graph state](https://softwarequtech.github.io/SimulaQron/html/NativeModeGraphState.html)
