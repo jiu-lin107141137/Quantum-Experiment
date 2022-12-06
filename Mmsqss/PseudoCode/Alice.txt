@@ -1,11 +1,22 @@
 PROCEDURE alice
   n := nodes count
   m := message length
+  nodeIdDict := the dictionary to translate nodeName to nodeId
 
-  basesMartix := bool[m][n] # a 2-dimension array to store the basis everyone use to measure qubits
-  measurementResult := [] # container of measurement result of Alice
+  basisMartix := bool[m][n] # a 2-dimension array to store the basis everyone use to measure qubits, 0 represented X-basis, 1 represented Z-basis
+  measurementResultList := [] # container of measurement result of Alice
   
-  # receive qubits from tp and measures them
+  # receives qubits from tp and measures them
+  FOR i = 1 to message length:
+    q := qubit received
+    basis := randomly chooses 0 or 1 # 0 represented X-basis, 1 represented Z-basis
+    IF going to measure q in X-basis
+      applies H-gate on q
+    END IF
+    measures q and store the result in measurementResultList[i]
+    store the basis in basisMatrix[i][nodeIdDict['Alice']]
+  END FOR
+  
   
 
 
