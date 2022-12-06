@@ -1,6 +1,11 @@
 PROCEDURE alice
-  basesMartix := a 2-dimension array 
-  # receive qubits and measures them
+  n := nodes count
+  m := message length
+
+  basesMartix := bool[m][n] # a 2-dimension array to store the basis everyone use to measure qubits
+  measurementResult := [] # container of measurement result of Alice
+  
+  # receive qubits from tp and measures them
   
 
 
