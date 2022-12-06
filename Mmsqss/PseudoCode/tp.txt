@@ -3,24 +3,27 @@ PROCEDURE tp()
   # tp is an untrusted machine
   # Alice, Bob and Charlie want to get a secret shared key
 
-  n := nodes number
+  n := nodes number without tp itself # in this case, n = 3
   FOR time = 1 to message length
     qubitsList := [] # container of qubits
     
+    # generates qubits to make complete graph state
     FOR i = 1 to n 
       q := new qubit
       applies H-gate on q
       appends q to qubitsList
     END FOR
     
+    # makes a complete graoh state
     FOR i = 1 to n
       FOR j = i to n
         applies CPhase-gate on qubitsList[i] and qubitsList[j] # qubitsList[i] is control bit while qubitsList[j] is target
       END FOR
     END FOR
     
+    # sends qubits to other nodes
     FOR i = 1 to n:
-      sends qubitsList[i] to node(i)
+      sends qubitsList[i] to node(i) # Alice, Bob and Charlie
     END FOR
   END FOR
 END PROCEDURE
