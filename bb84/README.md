@@ -24,7 +24,7 @@ Now suppose that there are 2 nodes, Alice and Bob, want to make there own secret
     To become a specific state, the 4 states stand the same probability, **25%**.  
     base[i] determines a qubit to be |0> or |1>, while key[i] determines a qubit to be in the basis od X or Z  
     > 
-    **Note: The four states are not all mutually orthogonal, and therefore no measurement can distinguish between (all of) them with certainty**
+    + **Note: The four states are not all mutually orthogonal, and therefore no measurement can distinguish between (all of) them with certainty**
     >
 4. Alice sends the qubits to Bob
 5. Alice and Bob discard any bits where Bob measures a different basis than Alice prepared.
@@ -34,9 +34,9 @@ Now suppose that there are 2 nodes, Alice and Bob, want to make there own secret
     4. Alice receives the gb, and commpares the guessing base from Bob and the base of Alice
     5. Alice gets an array of indices where gb[i] = base[i], discard corresponding key if the index is not in the array
     6. Alice sends the array to Bob, Bob receives it and discards the measurements if the corresponding index is not in the array
-        >
-        **This means the qubits are measured by Bob in different basis than Alice prepared.**
-        >
+    >
+    + **This means the qubits are measured by Bob in different basis than Alice prepared.**
+    >
     After doing this, with high probability, there will be at least 2n bits left.  
     For Alice, the 2n bits is the key, For Bob, is the measurement.  
     The key and measurements should be the same if there're no coherences in the channel and no eavesdropping during the teleporting  
