@@ -1,0 +1,22 @@
+PROCEDURE tp()
+  n := nodes number
+  FOR time = 1 to message length
+    qubitsList := [] # container of qubits
+    
+    FOR i = i to n
+      q := new qubit
+      applies H-gate on q
+      appends q to qubitsList
+    ENDFOR
+    
+    FOR i = 1 to n
+      FOR j = i to n
+        applies CPhase-gate on qubitsList[i] and qubitsList[j] # qubitsList[i] is control bit while qubitsList[j] is target
+      ENDFOR
+    ENDFOR
+    
+    FOR i = 1 to n:
+      sends qubitsList[i] to node(i)
+    ENDFOR
+  ENDFOR
+ENDPROCEDURE
