@@ -59,5 +59,5 @@ If the state is disturbed by noise or eavesdropping, Bob will receive the wrong 
 
 ---
 
-### References: 
+### References : 
 Michael A. Nielsen, Isaac L. Chuang, Massachusetts Institute of Technology. (December 2010). Quantum Computation and Quantum Information(10th Anniversary Edition). Cambridge University Press, New York.
