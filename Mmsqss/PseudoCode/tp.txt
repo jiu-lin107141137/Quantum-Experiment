@@ -1,9 +1,13 @@
 PROCEDURE tp()
+  # Suppose that we have 4 nodes, tp, Alice, Bob, Charlie
+  # tp is an untrusted machine
+  # Alice, Bob and Charlie want to get a secret shared key
+
   n := nodes number
   FOR time = 1 to message length
     qubitsList := [] # container of qubits
     
-    FOR i = i to n
+    FOR i = 1 to n 
       q := new qubit
       applies H-gate on q
       appends q to qubitsList
