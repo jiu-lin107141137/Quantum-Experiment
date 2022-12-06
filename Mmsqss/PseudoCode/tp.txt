@@ -1,9 +1,8 @@
 PROCEDURE tp()
-  # Suppose that we have 4 nodes, tp, Alice, Bob, Charlie
+  # Suppose that we have some nodes, Alice, Bob and Charlie want to get a secret shared key
   # tp is an untrusted machine
-  # Alice, Bob and Charlie want to get a secret shared key
 
-  n := nodes number without tp itself # in this case, n = 3
+  n := nodes count # in this case, n = 3
   FOR time = 1 to message length
     qubitsList := [] # container of qubits
     
