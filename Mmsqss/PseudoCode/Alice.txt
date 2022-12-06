@@ -1,0 +1,7 @@
+PROCEDURE alice
+  basesMartix := a 2-dimension array 
+  # receive qubits and measures them
+  
+
+
+END PROCEDURE
